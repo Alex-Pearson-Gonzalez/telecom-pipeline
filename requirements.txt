@@ -1,0 +1,4 @@
+requests
+sqlalchemy
+psycopg2-binary
+schedule
