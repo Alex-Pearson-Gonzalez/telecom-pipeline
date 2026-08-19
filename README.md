@@ -1,3 +1,4 @@
+> **Status:** Deployed on Railway — the pipeline runs hourly against a managed PostgreSQL instance.
 # Telecom Network Data Pipeline
 
 A containerized ETL pipeline that tracks IP address space announcements for major European
@@ -161,5 +162,4 @@ timestamps and severity levels.
 
 - REST API layer (FastAPI) to expose the collected data over HTTP
 - Retry logic with exponential backoff for transient API failures
-- Deployment to a cloud host with a managed PostgreSQL instance
 - Additional RIPEstat endpoints (routing history, geolocation, RPKI validation status)
