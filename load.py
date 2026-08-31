@@ -19,7 +19,7 @@ Session = sessionmaker(bind=engine)
 def load_snapshot(clean_data: dict) -> None:
     session = Session()
     try:
-        snapshot = NetworkSnapshot(**clean_data)
+        snapshot = NetworkSnapshot(**clean_data) #dictionary unpacking. It takes the dict and spreads it into keyword arguments.
         session.add(snapshot)
         session.commit()
         logger.info(f"Loaded snapshot for {clean_data['asn']}, id={snapshot.id}")
