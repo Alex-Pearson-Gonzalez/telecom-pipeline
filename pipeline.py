@@ -4,7 +4,7 @@ from transform import transform_prefix_data
 from load import load_snapshot
 
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger(__name__)  # notice it calls getLogger(__name__) and not basicConfig, since this file is not the entrypoint
 
 ASNS = ["AS3352", "AS12430", "AS12479"]
 
