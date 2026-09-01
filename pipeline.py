@@ -18,9 +18,9 @@ def run_pipeline():
         try:
             logger.info(f"Processing {asn}...")
 
-            raw = fetch_prefix_count(asn)
-            clean = transform_prefix_data(raw, asn)
-            load_snapshot(clean)
+            raw = fetch_prefix_count(asn) # extract
+            clean = transform_prefix_data(raw, asn) # transform
+            load_snapshot(clean)  # load
 
             logger.info(f"{asn}: {clean['prefix_count']} prefixes loaded")
             success_count += 1
