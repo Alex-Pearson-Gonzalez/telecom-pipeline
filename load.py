@@ -6,7 +6,7 @@ from models import NetworkSnapshot
 
 logger = logging.getLogger(__name__)
 
-DATABASE_URL = os.getenv("DATABASE_URL")
+DATABASE_URL = os.getenv("DATABASE_URL")  #This line says: "give me whatever DATABASE_URL the environment set to."
 
 if not DATABASE_URL:
     raise ValueError("DATABASE_URL environment variable is not set")
