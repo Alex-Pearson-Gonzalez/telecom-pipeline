@@ -1,4 +1,4 @@
-requests
-sqlalchemy
-psycopg2-binary
-schedule
+requests==2.34.2
+sqlalchemy==2.0.52
+psycopg2-binary==2.9.12
+schedule==1.2.2
